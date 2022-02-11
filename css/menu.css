@@ -2,13 +2,21 @@
 /*★메뉴★*/
 #menuBox{
     background-color:#146eb4;
+<<<<<<< Updated upstream
+=======
+    z-index:10; /*스크롤시*/
+    width:1280px; /*웹 크기 줄이면 글자 중앙 배치 안 됨*/
+>>>>>>> Stashed changes
 }
 /**#FFB300**/
 #menuBox ul li {
     display:inline-block;
     padding:10px;
     padding-right:50px;
+<<<<<<< Updated upstream
     text-align:left; /*글자 왼쪽 정렬 안 됨*/
+=======
+>>>>>>> Stashed changes
 }
 
 #menuBox a {
@@ -18,6 +26,7 @@
 }
 /*★상품 공통★*/
 
+<<<<<<< Updated upstream
 /*
 .productBox {
     display:none;
@@ -81,18 +90,83 @@
 }
 
 #icecream{
+=======
+/*★subtitle map★*/
+#sub_title {
+    width:100%;
+    float:right;
+    margin-top:30px;
+}
+
+#map {
+    float:right;
+    margin-right:30px;
+}
+#map li {
+    display:inline-block;
+    padding:5px;
+}
+
+#map a {
+    color:#737373;
+    font-size:13px;
+    text-decoration:none;
+}
+
+/*★상품 공통★*/
+.product div{
+    display:inline-block;
+    margin:15px;
+}
+
+.product img{
+    height:250px;
+    width:250px;
+}
+
+.product a{
+    text-decoration:none;
+    font-weight:bold;
+    font-size:10pt;
+    color: black;
+}
+
+
+.productBox{
+>>>>>>> Stashed changes
     height: 1050px;
     background: #fff9ea;
 }
 
+<<<<<<< Updated upstream
 #icecream h2{
+=======
+.productBox h2{
+>>>>>>> Stashed changes
     color:#146eb4;
     font-weight:bold;
     font-size:25pt;
     margin-bottom:20px;
     margin-top:10px;
+<<<<<<< Updated upstream
 }
 
 .product div:hover{
     opacity:0.8;
+=======
+}
+
+
+.product div:hover{
+    transform: scale(1.1, 1.1);
+    transition:transform 1s;
+}
+
+
+/*★for js★*/
+.menuBoxFixed{
+    position:fixed;
+    top:0;
+    z-index:10;
+>>>>>>> Stashed changes
 }
