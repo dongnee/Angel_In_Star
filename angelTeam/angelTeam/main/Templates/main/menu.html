@@ -15,7 +15,7 @@
     <div id="wrap">
         <header>
             <div id="headerBox">
-                <div id="logoBox"><a href=""><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
+                <div id="logoBox"><a href="{%url 'main:main'%}"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
                 <div id="loginBox">
                     <ul id="signIn">
                         {% if user.is_authenticated %}

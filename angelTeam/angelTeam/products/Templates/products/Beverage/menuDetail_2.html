@@ -19,10 +19,14 @@
                 <div id="logoBox"><a href="{%url 'main:main'%}"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
                 <div id="loginBox">
                     <ul id="signIn">
-                        <li><a href="#">Sign In</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        {% if user.is_authenticated %}
+                        <a class="nav_link" href="{%url 'accounts:logout'%}">{{user.username}}(Log Out)</a>
+                        {% else %}
+                        <li><a href="{%url 'accounts:login'%}">Sign In</a></li>
+                        {% endif %}
+                        <li><a href="{%url 'accounts:signup'%}">Sign Up</a></li>
                         <li><a href="#">My Angels</a></li>
-                        <li><a href="#">STORE</a></li>
+                        <li><a href="{%url 'main:store'%}">STORE</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,9 +35,9 @@
         <nav>
             <div id="mainMenuBox">
                 <ul id="menuItem">
-                    	<li><a href="#">MENU</a></li>
-                        <li><a href="#">STORE</a></li>
-                        <li><a href="#">SERVICE</a></li>
+                    	<li><a href="{%url 'main:menu'%}">MENU</a></li>
+                        <li><a href="{%url 'main:store'%}">STORE</a></li>
+                        <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
                 </ul>
             </div>
         </nav>
