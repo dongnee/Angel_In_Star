@@ -1,13 +1,14 @@
-/*★★★★★★★★★★★★★★★메뉴 페이지★★★★★★★★★★★★★★★★★*/
-/*★메뉴★*/
+/*메뉴페이지
+menu.css*/
+
+/*메뉴
+메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM*/
 #menuProduct{
     width:100%;
     background-color:#805900;
     margin-top:25px;
     position:relative;
 }
-
-
 
 #menuBox ul li {
     display:inline-block;
@@ -21,8 +22,8 @@
     text-decoration:none;
 }
 
-
-/*subtitle*/
+/*subtitle
+홈으로 > Menu > See All*/
 .sub_title {
     width:100%;
     float:right;
@@ -39,7 +40,8 @@
     text-shadow: 2px 2px 2px #C2C2C2;
 }
 
-/*map*/
+/*map
+홈으로 > Menu > 메뉴별(eg.Coffee)*/
 .map {
     float:right;
     margin-right:30px;
@@ -66,8 +68,7 @@
     display:block;
 }
 
-/*★상품 공통★*/
-
+/*메뉴 카테고리 안의 상품들*/
 .product div{
     display:inline-block;
     margin:15px;
@@ -90,8 +91,6 @@
     width:250px;
 }
 
-
-/*★상품 카테고리별★*/
 .productBox{
     padding-bottom: 50px;
     background: #fff9ea;
@@ -110,12 +109,11 @@
     transition:transform 1s;
 }
 
-
-
-
-/*말풍선 css*/
+/*말풍선 css
+10초 기다리면 말풍선으로 상품 추천*/
 .bubble
 {
+    /*버블 기본 설정*/
     width: 205px;
     height: 60px;
     padding: 0px;
@@ -123,6 +121,15 @@
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    /*버블 조절*/
+    float:left;
+    position:fixed;
+    z-index:20;
+    opacity:0.9;
+    margin-left:5px;
+    margin-top:40px;
+    font-size:9pt;
+    text-align:left;
 }
 
 .bubble:after
@@ -139,18 +146,7 @@
     left: 32px;
 }
 
-.bubble{
-    float:left;
-    position:fixed;
-    z-index:20;
-    opacity:0.9;
-    margin-left:5px;
-    margin-top:40px; /*버블 이미지 위치 조절(스크롤 내리면 헤더와 겹침)*/
-    font-size:9pt;
-    text-align:left;
-
-}
-
+/*말풍선 및 이미지 css*/
 .bubble img{
     height:150px;
     width:150px;
@@ -158,6 +154,7 @@
     margin-left:25px;
 }
 
+/*말풍선 내의 메세지 css*/
 #msg{
     margin-left:20px;
     margin-right:20px;
