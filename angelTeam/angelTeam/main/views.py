@@ -6,14 +6,14 @@ from django.http import HttpResponse, HttpResponseRedirect
 def main(request):
     return render(request, 'main/main.html')
 
-def cs(request):
-    return render(request, 'main/CS.html')
+def menu(request):
+    return render(request, 'main/menu.html')
 
 def store(request):
     return render(request, 'main/store.html')
 
-def menu(request):
-    return render(request, 'main/menu.html')
+def cs(request):
+    return render(request, 'main/CS.html')
 
 def event(request):
     return render(request, 'main/event.html')
