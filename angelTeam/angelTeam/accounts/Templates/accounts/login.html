@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <section>
+        <div align="center">
+            <div><h1 class="signTxt">로그인</h1></div>
+            <form method="post" action="{% url 'accounts:login' %}">
+            {% csrf_token %}
+            {% include "form_errors.html" %}
+            <input type="hidden" name="next" value="{{ next }}">  <!-- 로그인 성공후 이동되는 URL -->
+
+            <table align="center" id="loginTable">
+                <tr><td colspan="2"><h4 style="font-weight:bold;"><br>angel in star 에 오신 것을 환영합니다!<br></h4></td></tr>
+
+                <!--아이디 입력-->
+                <tr><td style="text-align:right;">사용자 이름</td> <td><input type="text" name="username" id="username"
+                                                  value="{{ form.username.value|default_if_none:'' }}" maxlength="8"></td></tr>
+
+                <!--비밀번호 입력-->
+                <tr><td style="text-align:right;">비밀번호</td> <td><input type="password" name="password" id="password"
+                                               value="{{ form.password.value|default_if_none:'' }}" maxlength="12"></td></tr>
+
+
+                <tr><td style="text-align:right;"><br><button type="submit" class="btn">로그인</button></td>
+
+
+                <td style="text-align:center;"><br><button type="submit" class="btn"><a id="signupTxt" href="{% url 'accounts:signup' %}">회원가입</a></button></td></tr>
+
+            </table>
+
+            </form>
+
+        </div>
+    </section>
+
+{% endblock %}

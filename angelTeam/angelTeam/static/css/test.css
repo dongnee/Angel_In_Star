@@ -1,0 +1,171 @@
+
+body h1 { font-family: 'Lora', 'Gowun Batang', serif; }
+body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
+
+#slider-wrap {
+    margin:0;
+    padding:0;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    width:100%;
+}
+
+#space1 { /* 슬라이드와 fixed01 사이 여백 */
+    background:#805900;
+    height:100px;
+}
+
+.fixed01 {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 600px;
+    background-image: url(../image/bean22.png);
+    background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+}
+
+.fixed01 h1 {
+    position:absolute;
+    width:600px;
+    margin-top:450px;
+    margin-left:180px;
+}
+
+.fixed01 h2 {
+    position:absolute;
+    width: 600px;
+    margin-top:450px;
+    margin-left:180px;
+}
+
+#photo1 {
+    position:absolute;
+    width: 400px;
+    margin-left:30px;
+    margin-top:30px;
+}
+
+#photo1:hover {
+    transition:0.1s;
+    transform: scale(1.05);
+}  /* fixed01 div css 끝 */
+
+
+.fixed02{
+                width: 100vw;
+                margin: auto;
+
+                height: 400px;
+
+                /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
+                background-color: #f3e7cd;
+                background-repeat: no-repeat; /* 배경이미지X */
+                background-size: cover; /* 요소를 비율에 맞게 커버 */
+                background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+                background-attachment: fixed; /* 스크롤바 움직일때 이미지가 따라다님 */
+            }
+
+#slider div { margin:0; }
+/*배너: 커피 구독 서비스 관련 배너*/
+.banner{
+}
+
+.banner img{
+   width: 90%;
+   height:auto;
+}
+
+.banner h1{
+    opacity:0;
+}/*배너 끝*/
+
+/*이벤트정보2*/
+.spring {
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.spring img {
+    height:auto;
+    height: 90%;
+    float:left;
+} /*이벤트정보2 끝*/
+
+.maincoffee{
+    width: 90%;
+    height: auto;
+} /*이벤트정보3 끝*/
+
+
+.fixed04{
+
+                height: 581px;
+                width: 100vw;
+                margin-left: calc(-50vw + 50%);
+                border: 2px solid green;height: 500px;
+
+                /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
+                background-image: url(../angelTeam/image/starbucks.jpg);
+
+                background-size: cover; /* 요소를 비율에 맞게 커버 */
+                background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+                background-attachment: fixed; /* 스크롤바 움직일때 이미지가 따라다님 */
+                }
+
+
+.photo2{
+               position: absolute;
+           }
+
+.photo3{
+           position: absolute;
+           animation: slide 2s ease-out;
+           }
+
+h1{
+           float:left;
+           font-size: 10em;
+           color: white;
+           position:absolute;
+           top:480px;
+           left:5px;
+           animation: slide2 2s ease-out;
+           }
+
+           @keyframes slide {
+           from{
+                left:-1200px;
+
+                }
+                to{
+                left:-200px}
+                }
+h2{
+           float:left;
+           font-size: 10em;
+           width:258px;
+           color: white;
+           position:absolute;
+           top:580px;
+           left:5px;
+           animation: slide2 2s ease-out;
+           }
+
+           @keyframes slide {
+           from{
+                left:-200px;
+
+                }
+                to{
+                left:200px}
+                }
+           @keyframes slide2 {
+           from{
+                left:-400px;
+
+                }
+                to{
+                left:5px}
+                }

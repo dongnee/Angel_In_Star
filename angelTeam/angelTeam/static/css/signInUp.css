@@ -1,0 +1,74 @@
+/*signInUp*/
+
+/*login.html, signup.html의 배경, 글자 속성*/
+section {
+    height: 750px;
+    background: url(https://mblogthumb-phinf.pstatic.net/MjAxODAxMjZfMTk4/MDAxNTE2OTY0MjQ3Nzg5.ZkdaMcKD2TFFGY0wdICDR9Ra_ZtHeM7yqiQ1FDJpe-sg.4UWDDW1eNpnQ5wtHHGw9Xv194f_hJHL9d3BiBWQWpRwg.JPEG.silvercho7/201.jpg?type=w800);
+    align:center;
+    font-family: 'Gowun Batang', serif;
+}
+.signTxt{
+    color:#4d4d4d;
+    text-shadow:5px 5px 5px white;
+    /*text-shadow:5px 5px 5px #bababa;*/
+    line-height:150px;
+}
+
+h1{
+    color:#4d4d4d;
+    font-weight:bold;
+}
+
+h4{
+    color:#4d4d4d;
+}
+
+/*login.html style*/
+#loginTable{
+    border: solid 1px gray;
+    margin:2% auto;
+    padding:20px;
+    background:white;
+    opacity:0.9;
+}
+
+#loginTable tr td{
+    text-align:left;
+    padding:10px;
+}
+
+
+/*signup.html style*/
+#signUpTable{
+    border: solid 1px gray;
+    background:white;
+    opacity:0.9;
+}
+
+#signUpTable tr td{
+    text-align:left;
+    padding:10px;
+}
+
+
+
+/*login.html signup.html의 버튼 style*/
+
+.btn{
+    border:1px solid #FF9600;
+    border-radius:15%;
+    color: #FF9600;
+    padding:5px;
+
+}
+
+.btn:hover{
+    box-shadow: 0 5px 5px 0 gray;
+    color: #FF9600;
+    font-weight:bold;
+}
+
+#signupTxt{
+    text-decoration:none;
+    color: #FF9600;
+}

@@ -1,0 +1,169 @@
+/*menu.css
+메뉴 페이지 css*/
+
+/*메뉴 바 - <header>에 위치
+메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM*/
+#menuProduct{
+    width:100%;
+    background-color:#805900;
+    margin-top:25px;
+    position:relative;
+}
+
+#menuBox ul li {
+    display:inline-block;
+    padding:10px;
+    padding-right:50px;
+}
+
+#menuBox a {
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+/*메뉴바 밑의 맵
+홈으로 > 메뉴 > see all*/
+.sub_title {
+    width:100%;
+    float:right;
+    margin-top:30px;
+}
+
+.sub_title h1 {
+    font-size:36px;
+    font-weight:bold;
+    text-align:left;
+    width:50%;
+    margin:0;
+    padding-left:100px;
+    text-shadow: 2px 2px 2px #C2C2C2;
+}
+
+/*메뉴바 밑 맵(메뉴별)
+홈으로 > 메뉴 > 메뉴별(eg.Coffee)*/
+.map {
+    float:right;
+    margin-right:30px;
+}
+
+.map li {
+    display:inline-block;
+    padding:5px;
+}
+
+.map a {
+    color:#737373;
+    font-size:13px;
+    text-decoration:none;
+}
+
+/*for js*/
+.sub_title{
+    display:none;
+}
+
+/*for js*/
+.click_sub_title{
+    display:block;
+}
+
+/*상품*/
+.product div{
+    display:inline-block;
+    margin:15px;
+    height:250px;
+    width:250px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+
+.product dl{
+    display:inline-block;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:10pt;
+    color: black;
+}
+
+.product img{
+    height:250px;
+    width:250px;
+}
+
+.productBox{
+    padding-bottom: 50px;
+    background: #fff9ea;
+}
+
+.productBox h2{
+    color:#805900;
+    font-weight:bold;
+    font-size:25pt;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.product img:hover{
+    transform: scale(1.1, 1.1);
+    transition:transform 1s;
+}
+
+/*말풍선 css: 메뉴 추천*/
+.bubble
+{
+    /*기본설정*/
+    width: 205px;
+    height: 60px;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    /*control*/
+    float:left;
+    position:fixed;
+    z-index:20;
+    opacity:0.9;
+    margin-left:5px;
+    margin-top:40px;
+    font-size:9pt;
+    text-align:left;
+}
+
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 13px 7px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -13px;
+    left: 32px;
+}
+
+/*말풍선 밑의 천사 이미지*/
+.bubble img{
+    height:150px;
+    width:150px;
+    margin-top:20px;
+    margin-left:25px;
+}
+
+/*말풍선 내 메세지*/
+#msg{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/*js 파일에서 사용하기 위함*/
+.bubbleBoxFixed{
+    position:fixed;
+    margin-top:220px;
+}

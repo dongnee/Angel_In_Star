@@ -1,0 +1,31 @@
+{% load static %}
+
+    <div id="wrap">
+        <header>
+            <div id="headerBox">
+                <div id="logoBox"><a href="{%url 'main:main'%}"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
+                <div id="loginBox">
+                    <ul id="signIn">
+                        {% if user.is_authenticated %}
+                        <a class="nav_link" href="{%url 'accounts:logout'%}">{{user.username}}님, 반갑습니다.(Logout)</a>
+                        {% else %}
+                        <li><a href="{%url 'accounts:login'%}">Sign In</a></li>
+                        {% endif %}
+                        <li><a href="{%url 'accounts:signup'%}">Sign Up</a></li>
+                        <li><a href="{%url 'accounts:board' %}">My Angels</a></li>
+                        <li><a href="{%url 'main:store'%}">STORE</a></li>
+                    </ul>
+                </div>
+                <p id="search_icon"><a href=""><img src="{%static 'image/icon_magnifier_black.png'%}"></a></p>
+                <div id="mainMenuBox">
+                    <ul id="menuItem">
+                            <li><a href="{%url 'main:menu'%}">MENU</a></li>
+                            <li><a href="{%url 'main:store'%}">STORE</a></li>
+                            <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
+                            <li><a href="{%url 'main:event'%}">WHAT'S NEW</a></li>
+                            <li><a href="">STORY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>

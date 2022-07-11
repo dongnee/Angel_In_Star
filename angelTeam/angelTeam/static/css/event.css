@@ -1,0 +1,90 @@
+section.notice {
+    width:100%;
+    height:1400px;
+    background-color:white;
+}
+
+.board-table img {
+    width:850px;
+    height:350px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.page-title {
+    padding-top:30px;
+    margin-bottom: 60px;
+}
+
+.page-title h3 {
+    font-size: 60px;
+    color: #333333;
+    text-align: left;
+    margin-left:130px;
+}
+
+.board-table {
+  font-size: 20px;
+  width: 85%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.board-table a {
+  color: #333;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
+}
+
+.board-table a:hover {
+    transition:0.1s;
+    transform: scale(1.02);
+}
+
+.board-table th {
+  text-align: center;
+}
+
+.th-num {
+    padding:20px;
+}
+
+
+.board-table tr {
+    border-bottom: 1px solid #ccc;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.container h3{
+    font-size: 36px;
+    font-weight: bold;
+    text-align:left;
+    width:50%;
+    text-shadow: 2px 2px 2px #c2c2c2;
+    color:#8C5C03;
+}
+
+.board-table thead{
+    background:#8C5C03;
+    color: white;
+}
+
+.board-table tr th{
+    font-size:13pt;
+    text-align:center;
+}
+
+.board-table tr td{
+    font-size:13pt;
+    text-align:center;
+}
+
+.board-table tr, td{
+    margin:0;
+}

@@ -1,0 +1,186 @@
+/*common.css*/
+/*문서 전체에 영향을 미치는 css*/
+
+/*모든 컨텐츠 가운데 정렬*/
+* {margin:0 auto;}
+
+/*모든 컨텐츠를 포함하는 div (id wrap)*/
+#wrap {
+    width:100%;
+    background-color:#eeeeee; /*배경색*/
+    text-align:center;
+    position:relative; /*최상위태그의 포지션 지정*/
+    font-family: 'Lora', 'Gowun Batang', serif;
+}
+
+/* 모든 <img>태그 테두리, 마진 없음*/
+img {border:0; margin:0;}
+
+
+/***************************** HeaderBox *****************************/
+#headerBox {
+    background-color:white;
+    height:170px;
+    padding:0;
+    width:100%;
+    z-index:10;
+}
+
+/*js 파일에서 사용하기 위함*/
+.headerBoxFixed{
+    position:fixed;
+    top:0px;
+}
+
+#logoBox {
+    float:left;
+    margin-left:100px;
+    margin-top:10px;
+    position:absolute;
+}
+
+#logoBox img {
+    width:120px;
+    height:120px;
+    padding-top:10px;
+    padding-left:10px;
+}
+
+#loginBox {
+    margin-top:8px;
+    margin-right:170px;
+    float:right;
+}
+
+#loginBox ul li {
+    display:inline-block;
+    padding:15px;
+}
+
+#loginBox a {
+    color:#805900;
+    text-decoration:none;
+    font-size:15px;
+}
+
+#signIn a:hover { text-decoration:underline; }
+
+#search_icon {
+    display: block;
+    position: absolute;
+    right: 120px;
+    top: 20px;
+    width:30px;
+    height:30px;
+    background: #fff;
+    border: 1px solid #805900;
+    border-radius: 5px;
+}
+
+#search_icon img { margin-top:5px; float:center; }
+
+/***************************** mainMenuBox *****************************/
+#mainMenuBox {
+    width:100%;
+    background-color:white;
+    display:inline-block;
+    margin-top:43px;
+}
+
+#menuItem {
+    width:75%;
+    float:right;
+    align-items: center;
+}
+
+#mainMenuBox ul li {
+    display:inline-block;
+    padding-right:75px;
+}
+
+#mainMenuBox a {
+    color:#FFB300;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:21px;
+    position:relative;
+    padding:10px;
+}
+
+#mainMenuBox a::after {
+    content: "";
+    position:absolute;
+    z-index:5;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:0;
+    height:4px;
+    background: #805900;
+    transition: all .5s ease-out;
+}
+
+#mainMenuBox a:hover::after {
+    width:100%;
+}
+
+#menuItem a:hover{ color:#805900;}
+
+
+/***************************** footerBox *****************************/
+#footerBox div {
+    background-color:#FFB300;
+    padding:20px;
+    clear : both;
+}
+
+
+/***************************** bottomMenu *****************************/
+#bottomMenuBox {
+    height:30px;
+    line-height:30px;
+}
+
+#bottomMenuBox li {
+    display:inline-block;
+    text-align:center;
+    padding-right:50px;
+    font-size:15.5px;
+}
+
+#bottomMenuBox a {
+    color:white;
+    text-decoration:none;
+}
+
+#bottomMenuBox a:hover { text-decoration:underline; }
+
+#companyInfoBox li {
+    display:inline-block;
+    text-align:center;
+    padding-right:30px;
+    padding-bottom:20px;
+    color:white;
+    text-decoration:none;
+    font-size:14.5px;
+}
+
+#moveToTopBox {
+    position:fixed;
+    width:38px;
+    height:38px;
+    bottom:25px;
+    left:94%;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+#moveToTopBox img {
+    width:100%;
+    height:100%;
+}
+
+#moveToTopBox:hover {
+    transition:0.1s;
+    transform: scale(1.05);
+}
